@@ -4,6 +4,9 @@ Preprocessing script for EC data.
 """
 
 import os
+import sys
+ROOT_PATH = '/'.join(os.path.abspath(__file__).split('/')[:-3])
+sys.path.append(ROOT_PATH)
 from src import utils
 def make_dirs(dirs):
     for d in dirs:

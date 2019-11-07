@@ -254,6 +254,8 @@ class CRFLoss_vb_PA(nn.Module):
         return:
             loss
         """
+        import ipdb
+        ipdb.set_trace()
 
         if torch.cuda.is_available():
             scores = scores.transpose(1, 0).cuda()

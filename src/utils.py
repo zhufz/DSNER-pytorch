@@ -1,6 +1,8 @@
 
-import os
+import os,sys
 import torch
+ROOT_PATH = '/'.join(os.path.abspath(__file__).split('/')[:-1])
+sys.path.append(ROOT_PATH)
 from vocab import Vocab
 import math
 from tqdm import tqdm
